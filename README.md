@@ -84,7 +84,19 @@ hint of which type to parse.
 
 If you provide a formatter flag, but no timestamp, it prints the current time in
 that format. If you provide a formatter flag and a timestamp, it attempts to
-parse the timestamp. See the help output (`-h/--help`) for the list of all flags.
+parse the timestamp.
+
+```
+$ z --rfc-3339 '2018-08-27 15:00:00Z'
+Local time:		2018-08-27 08:00:00 PDT (7 hours behind UTC)
+
+UTC time:		2018-08-27 15:00:00 UTC [was 1s ago]
+Epoch timestamp:	1535382000
+Millisecond timestamp:	1535382000000
+Nanosecond timestamp:	1535382000000000000
+```
+
+See the help output (`-h/--help`) for the list of all of the Formatter flags.
 
 ### Help Output
 
